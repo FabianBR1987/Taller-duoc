@@ -21,3 +21,47 @@
 # o	Alumno 2: Función para buscar y eliminar contactos.
 # o	Alumno 3: Estructura del menú principal y control de flujo del programa.
 
+import os
+from function import *
+os.system("cls")
+
+option = None
+contacto = []
+
+while option != 5:
+    print("\t\t----Menu Mini agenda de contactos----")
+    print("1) Agregar contacto")
+    print("2) Listar contacto")
+    print("3) Buscar contacto")
+    print("4) Eliminar contacto")
+    print("5) Salir")
+    try:
+        option = int(input("Seleccione opcion: \n"))
+        if option < 1 or option > 5:
+            print("ERROR: Opcion elegida debe ser entre 1 y 5\n")
+        else:
+            if option == 1:
+                os.system("cls")
+                agregar_contacto()
+                os.system("pause")
+            elif option == 2:
+                os.system("cls")
+                mostrar_contacto(contacto)
+                os.system("pause")
+            elif option == 3:
+                os.system("cls")
+                print(option)
+                os.system("pause")
+            elif option == 4:
+                os.system("cls")
+                print(option)
+                os.system("pause")
+            elif option == 5:
+                os.system("cls")
+                print("saliendo del sistema")
+                os.system("pause")                    
+             
+    except:
+        print("La opcion debe ser numero entero\n")    
+print("Haz salido del sistema")
+    
