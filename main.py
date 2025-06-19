@@ -46,7 +46,7 @@ while option != 5:
                 os.system("pause")
             elif option == 2:
                 os.system("cls")
-                mostrar_contacto(contacto)
+                mostrar_contactos(contacto)
                 os.system("pause")
             elif option == 3:
                 os.system("cls")
